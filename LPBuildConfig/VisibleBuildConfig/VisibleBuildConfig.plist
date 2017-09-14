@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>ConfigName</key>
+		<string>QA</string>
+		<key>Host</key>
+		<string>qa.active.com</string>
+		<key>AllowMock</key>
+		<true/>
+		<key>MockInt</key>
+		<integer>100</integer>
+		<key>MockFloat</key>
+		<string>22.88</string>
+		<key>MockArray</key>
+		<array>
+			<string>David</string>
+			<string>Alice</string>
+			<string>Brown</string>
+			<string>Jim</string>
+		</array>
+	</dict>
+	<dict>
+		<key>ConfigName</key>
+		<string>Stage</string>
+		<key>Host</key>
+		<string>stage.active.com</string>
+		<key>AllowMock</key>
+		<true/>
+		<key>MockDict</key>
+		<dict>
+			<key>M1</key>
+			<string>Test1</string>
+			<key>M2</key>
+			<integer>100</integer>
+			<key>M3</key>
+			<date>2017-09-13T02:14:10Z</date>
+		</dict>
+	</dict>
+	<dict>
+		<key>ConfigName</key>
+		<string>Production</string>
+		<key>Host</key>
+		<string>production.active.com</string>
+		<key>AllowMock</key>
+		<false/>
+		<key>Release</key>
+		<true/>
+	</dict>
+</array>
+</plist>
