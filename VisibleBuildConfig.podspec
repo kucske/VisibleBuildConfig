@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'VisibleBuildConfig'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of VisibleBuildConfig.'
+  s.summary          = 'A simple class enables you to define build configurations through plist and switch in visible window.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,8 +18,8 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+It a simple class that enables you to define build configurations through plist. And you can switch configuration easily in a visible window.
+                        DESC
 
   s.homepage         = 'https://github.com/davidli86/VisibleBuildConfig'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
