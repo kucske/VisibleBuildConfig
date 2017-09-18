@@ -19,3 +19,6 @@ After your key window is created, add below code:
 In 'VisibleBuildConfig.plist', you can define multiple build configutions. 'ConfigName' is the only required key. 'Release' is optional that flag it as the configuration for release build. Others are defined by yourself. Any types of data supported by plist are supported here.
 #### Add properties in 'VisibleBuildConfig.h'
 Add properties corresponding to your plist. It's case insensitive. So you can define the key with name 'Release', but property with name 'release'. Then you can access values thourgh properties. If you don't want to add properties, you can use 'configValueForKey' to access all values.
+
+![screenshot](https://github.com/davidli86/VisibleBuildConfig/raw/master/screenshot/screenshot.PNG)
+
