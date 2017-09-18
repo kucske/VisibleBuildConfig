@@ -1,0 +1,16 @@
+PODS:
+  - VisibleBuildConfig (0.1.0)
+
+DEPENDENCIES:
+  - VisibleBuildConfig (from `../`)
+
+EXTERNAL SOURCES:
+  VisibleBuildConfig:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  VisibleBuildConfig: 12e5412e86c827c7f62b4eb9a2986bd395c33bff
+
+PODFILE CHECKSUM: 84f49941286258d8c8b852f740f1061ed5ebaf41
+
+COCOAPODS: 1.1.1

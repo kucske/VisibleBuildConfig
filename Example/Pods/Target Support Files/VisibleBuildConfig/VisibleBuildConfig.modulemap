@@ -1,0 +1,6 @@
+framework module VisibleBuildConfig {
+  umbrella header "VisibleBuildConfig-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'VisibleBuildConfig_Example' do
+  pod 'VisibleBuildConfig', :path => '../'
+
+  target 'VisibleBuildConfig_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
