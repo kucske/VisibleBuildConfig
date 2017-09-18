@@ -6,7 +6,7 @@
 		<key>ConfigName</key>
 		<string>QA</string>
 		<key>Host</key>
-		<string>qa.active.com</string>
+		<string>qa.example.com</string>
 		<key>AllowMock</key>
 		<true/>
 		<key>MockInt</key>
@@ -25,7 +25,7 @@
 		<key>ConfigName</key>
 		<string>Stage</string>
 		<key>Host</key>
-		<string>stage.active.com</string>
+		<string>stage.example.com</string>
 		<key>AllowMock</key>
 		<true/>
 		<key>MockDict</key>
@@ -42,7 +42,7 @@
 		<key>ConfigName</key>
 		<string>Production</string>
 		<key>Host</key>
-		<string>production.active.com</string>
+		<string>production.example.com</string>
 		<key>AllowMock</key>
 		<false/>
 		<key>Release</key>
