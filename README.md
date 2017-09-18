@@ -44,12 +44,10 @@ In `VisibleBuildConfig.plist`, you can define multiple build configutions. `Conf
 <key>AllowMock</key>
 <true/>
 </array>
-</plist>
-
-```objective-c
-#### Add properties in `VisibleBuildConfig.h`
-Add properties corresponding to your plist. It`s case insensitive. So you can define the key with name `Release`, but property with name `release`. Then you can access values thourgh properties. If you dont want to add properties, you can use configValueForKey to access all values.
 ```
+#### Add properties in `VisibleBuildConfig.h`
+Add properties corresponding to your plist. It's case insensitive. So you can define the key with name `Release`, but property with name `release`. Then you can access values thourgh properties. If you dont want to add properties, you can use configValueForKey to access all values.
+```objective-c
 @property(nonatomic, strong) NSString   *configName;
 @property(nonatomic, strong) NSString   *host;
 @property(nonatomic, assign) BOOL       allowMock;
@@ -58,7 +56,7 @@ Add properties corresponding to your plist. It`s case insensitive. So you can de
 ```
 
 #### Switch notification
-Every switch action will cause kVisibleBuildConfigChanged notification posted. You can reset your context with the notification.
+Every switch action will cause `kVisibleBuildConfigChanged` notification posted. You can reset your context with the notification.
 
 
 ![screenshot](https://github.com/davidli86/VisibleBuildConfig/raw/master/screenshot/screenshot.PNG)
