@@ -18,31 +18,32 @@ After your key window is created, add below code:
 #### Config `VisibleBuildConfig.plist`
 In `VisibleBuildConfig.plist`, you can define multiple build configutions. `ConfigName` is the only required key. `Release` is optional that flag it as the configuration for release build. Others are defined by yourself. Any types of data supported by plist are supported here.
 ```xml
-<array>
-<dict>
-<key>ConfigName</key>
-<string>QA</string>
-<key>Host</key>
-<string>qa.example.com</string>
-<key>AllowMock</key>
-<true/>
-<key>MockInt</key>
-<integer>100</integer>
-<key>MockFloat</key>
-<string>22.88</string>
-<key>MockArray</key>
-<array>
-<string>David</string>
-<string>Alice</string>
-</array>
-</dict>
-<dict>
-<key>ConfigName</key>
-<string>Stage</string>
-<key>Host</key>
-<string>stage.example.com</string>
-<key>AllowMock</key>
-<true/>
+<array> 
+  <dict> 
+    <key>ConfigName</key>  
+    <string>QA</string>  
+    <key>Host</key>  
+    <string>qa.example.com</string>  
+    <key>AllowMock</key>  
+    <true/>  
+    <key>MockInt</key>  
+    <integer>100</integer>  
+    <key>MockFloat</key>  
+    <string>22.88</string>  
+    <key>MockArray</key>  
+    <array> 
+      <string>David</string>  
+      <string>Alice</string> 
+    </array> 
+  </dict>  
+  <dict> 
+    <key>ConfigName</key>  
+    <string>Stage</string>  
+    <key>Host</key>  
+    <string>stage.example.com</string>  
+    <key>AllowMock</key>  
+    <true/> 
+  </dict> 
 </array>
 ```
 #### Add properties in `VisibleBuildConfig.h`
