@@ -11,7 +11,7 @@ After your key window is created, add below code:
     [[VisibleBuildConfig sharedInstance] setAsRelease];
 #endif
 ```
-* For DEBUG build, enable swiping left from right edge to show the build configration browser. You switch configuration in here.
+* For DEBUG build, enable swiping left from right edge to show the build configration browser. You can switch configuration in here.
 * For RELEASE build, set it as release to fix the build configuration included Release key valued YES, otherwise use the the first one. 
 
 ## Define your build configurations
@@ -19,6 +19,9 @@ After your key window is created, add below code:
 In 'VisibleBuildConfig.plist', you can define multiple build configutions. 'ConfigName' is the only required key. 'Release' is optional that flag it as the configuration for release build. Others are defined by yourself. Any types of data supported by plist are supported here.
 #### Add properties in 'VisibleBuildConfig.h'
 Add properties corresponding to your plist. It's case insensitive. So you can define the key with name 'Release', but property with name 'release'. Then you can access values thourgh properties. If you don't want to add properties, you can use 'configValueForKey' to access all values.
+#### Switch notification
+Every switch action will cause 'kVisibleBuildConfigChanged' notification posted. You can reset your context with the notification.
+
 
 ![screenshot](https://github.com/davidli86/VisibleBuildConfig/raw/master/screenshot/screenshot.PNG)
 
