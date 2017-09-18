@@ -26,9 +26,9 @@ After your key window is created, add below code:
 
 ```objective-c
 #ifdef DEBUG
-[[VisibleBuildConfig sharedInstance] enableSwipe];
+    [[VisibleBuildConfig sharedInstance] enableSwipe];
 #else
-[[VisibleBuildConfig sharedInstance] setAsRelease];
+    [[VisibleBuildConfig sharedInstance] setAsRelease];
 #endif
 ```
 * For DEBUG build, enable swiping left from right edge to show the build configration browser. You can switch configuration in here.
