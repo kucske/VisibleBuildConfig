@@ -26,6 +26,7 @@ It a simple class that enables you to define build configurations through plist.
 For example, name your class as `MyVisibleBuildConfig`. And after your key window is created, add below code:
 
 ```objective-c
+    [[MyVisibleBuildConfig sharedInstance] setupWithPlist:@"MyVisibleBuildConfig"];
 #ifdef DEBUG
     [[MyVisibleBuildConfig sharedInstance] enableSwipe];
 #else
@@ -79,10 +80,6 @@ Add properties corresponding to your plist. It's case insensitive. So you can de
 ### Observe switch notification
 Every switch action will cause `kVisibleBuildConfigChanged` notification posted. You can reset your context with receiving the notification.
 
-
-![screenshot](https://github.com/davidli86/VisibleBuildConfig/raw/master/Example/screenshot/screenshot.PNG)
-
-
 ## Author
 
 davidli86, 492334421@qq.com
@@ -90,3 +87,7 @@ davidli86, 492334421@qq.com
 ## License
 
 VisibleBuildConfig is available under the MIT license. See the LICENSE file for more info.
+
+
+![screenshot](https://github.com/davidli86/VisibleBuildConfig/raw/master/Example/screenshot/screenshot.PNG)
+
